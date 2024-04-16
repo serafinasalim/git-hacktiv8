@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Portfolio</title>
+    <style>
+        label {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <div class="collapse navbar-collapse justify-content-end">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="#">HOME</a>
+                    <a class="nav-item nav-link" href="#">PRODUCT</a>
+                    <a class="nav-item nav-link" href="#">GALLERY</a>
+                    <a class="nav-item nav-link" href="#">BLOG</a>
+                    <a class="nav-item nav-link" href="#">INVENTORY</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="card mt-5 shadow-sm">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-5 border-right">
+                        <div class="row">
+                            <div class="col-5">
+                                <img src="dog.jpeg" alt="DOG" width="145px" height="145px" class="mt-1 rounded-circle">
+                            </div>
+                            <div class="col-7">
+                                <h2 class="mb-0 pb-0"><b>Serafina Salim</b></h2>
+                                <p class="text-muted mt-0 pt-0">Full Stack Developer</p>
+                                <div class="mt-4">
+                                    <button type="button" class="btn btn-primary">Kontak</button>
+                                    <button type="button" class="btn btn-outline-success">Resume</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-7">
+                        <table class="table table-sm table-borderless">
+                            <tr>
+                                <th width="30%" class="mt-0 pt-0">Availability</th>
+                                <td class="mt-0 pt-0">Full Time</td>
+                            </tr>
+                            <tr>
+                                <th width="30%" class="mt-0 pt-0">Usia</th>
+                                <td class="mt-0 pt-0">20</td>
+                            </tr>
+                            <tr>
+                                <th width="30%" class="mt-0 pt-0">Lokasi</th>
+                                <td class="mt-0 pt-0">Jakarta, Indonesia</td>
+                            </tr>
+                            <tr>
+                                <th width="30%" class="mt-0 pt-0">Pengalaman</th>
+                                <td class="mt-0 pt-0">1</td>
+                            </tr>
+                            <tr>
+                                <th width="30%" class="mt-0 pt-0">Email</th>
+                                <td class="mt-0 pt-0">serafinasalim01@gmail.com</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mt-5">
+            <div class="card-body">
+                <form action="">
+                    <div class="col-12">
+                        <label for="Nama">Nama</label>
+                        <input type="text" class="form-control">
+    
+                        <label class="mt-1" for="Role">Role</label>
+                        <input type="text" class="form-control">
+    
+                        <label class="mt-1" for="Availability">Availability</label>
+                        <input type="text" class="form-control">
+    
+                        <label class="mt-1" for="Age">Age</label>
+                        <input type="text" class="form-control">
+    
+                        <label class="mt-1" for="Lokasi">Lokasi</label>
+                        <input type="text" class="form-control">
+    
+                        <label class="mt-1" for="years-experience">Years Experience</label>
+                        <input type="text" class="form-control">
+    
+                        <label class="mt-1" for="Email">Email</label>
+                        <input type="text" class="form-control">
+                        
+                        <button type="submit" class="btn btn-success col-12 mt-3">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="nav">
+        <div style="padding-right: 10px;">
+            <ul>
+                <li><a href="">INVENTORY</a></li>
+                <li><a href="">BLOG</a></li>
+                <li><a href="">GALLERY</a></li>
+                <li><a href="">PRODUCT</a></li>
+                <li><a href="">HOME</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <table>
+            <tr>
+                <td width="70%">
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="dog.jpeg" width="140px" height="140px"> 
+                            </td>
+                            <td>
+                                <h1>Serafina Salim</h1>
+                                <p class="role">Front End Desginer</p>
+                                <button class="btn btn-blue">Kontak</button>
+                                <button class="btn btn-outline-green">Resume</button>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td class="title">Availability</td>
+                            <td>Full Time</td>
+                        </tr>
+                        <tr>
+                            <td class="title">Usia</td>
+                            <td>19</td>
+                        </tr>
+                        <tr>
+                            <td class="title">Lokasi</td>
+                            <td>Jakarta, Indonesia</td>
+                        </tr>
+                        <tr>
+                            <td class="title">Pengalaman</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td class="title">Email</td>
+                            <td>email@gmail.com</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="section">
+        <form action="">
+            <label>Nama </label><br>
+            <input type="text" placeholder="Masukkan Nama Anda"><br>
+            
+            <label>Role </label><br>
+            <input type="text"><br>
+            
+            <label>Availability </label><br>
+            <input type="text"><br>
+            
+            <label>Usia </label><br>
+            <input type="text"><br>
+            
+            <label>Lokasi </label><br>
+            <input type="text"><br>
+            
+            <label>Years Experience </label><br>
+            <input type="text"><br>
+            
+            <label>Email </label><br>
+            <input type="text"><br>
+
+            <button type="submit" class="btn btn-green">Submit</button>
+        </form>
+    </div> -->
+    
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <!-- Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

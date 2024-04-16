@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7f8fC;
+    padding-top: 10vh;
+    color: rgb(116, 115, 115);
+}
+
+.section {
+    margin: 5vh 5vw;
+    margin-top: 1vh;
+    padding: 1vw 1vh 1vw 1vh;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+img {
+    margin: 0;
+    padding: 0;
+    border-radius: 100px;
+    margin-right: 20px;
+}
+
+h1 {
+    margin: 0px 0px 0px 5px;
+    padding: 0;
+    color: black;
+}
+
+.role {
+    margin: 10px 0px 15px 5px;
+}
+
+.nav {
+    padding: 10;
+} 
+ul {
+    position: fixed;
+    margin: 0px 100px 0px 0px;
+    padding: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: white;
+    list-style-type: none;
+    padding-right: 500px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+li {
+    float: right;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: lightblue;
+}
+
+.btn {
+    margin: 5px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    border-color: transparent;
+}
+
+.btn-blue {
+    color: white;
+    background-color: blue;
+}
+
+.btn-blue:hover {
+    color: blue;
+    background-color: white;
+    border-color: blue;
+}
+
+.btn-outline-green {
+    color: green;
+    background-color: transparent;
+    border-color: green;
+}
+
+.btn-outline-green:hover {
+    color: white;
+    background-color: green;
+}
+
+.btn-green {
+    color: white;
+    background-color: green;
+    width: 100%;
+}
+
+.btn-green:hover {
+    color: green;
+    background-color: white;
+    border-color: green;
+}
+
+.title {
+    font-weight: bold;
+    padding: 10;
+    color: black;
+    padding-right: 20px;
+}
+
+label {
+    font-weight: bold;
+    color: black;
+}
+
+input {
+    margin: 10px 10px 10px 0;
+    width: 100%;
+}
+
+.border {
+    border-left: 1px solid black;
+    color: white;
+}
