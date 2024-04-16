@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Portfolio</title>
+    <style>
+        label {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <div class="collapse navbar-collapse justify-content-end">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="#">HOME</a>
+                    <a class="nav-item nav-link" href="#">PRODUCT</a>
+                    <a class="nav-item nav-link" href="#">GALLERY</a>
+                    <a class="nav-item nav-link" href="#">BLOG</a>
+                    <a class="nav-item nav-link" href="#">INVENTORY</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="card mt-5 shadow-sm">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-5 border-right">
+                        <div class="row">
+                            <div class="col-5">
+                                <img src="dog.jpeg" alt="DOG" width="145px" height="145px" class="mt-1 rounded-circle">
+                            </div>
+                            <div class="col-7">
+                                <h2 class="mb-0 pb-0" id="name"><b>Serafina Salim</b></h2>
+                                <p class="text-muted mt-0 pt-0" id="role">Full Stack Developer</p>
+                                <div class="mt-4">
+                                    <button type="button" class="btn btn-primary">Kontak</button>
+                                    <button type="button" class="btn btn-outline-success">Resume</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-7">
+                        <table class="table table-sm table-borderless">
+                            <tr>
+                                <th width="30%" class="mt-0 pt-0">Availability</th>
+                                <td class="mt-0 pt-0" id="availability">Full Time</td>
+                            </tr>
+                            <tr>
+                                <th width="30%" class="mt-0 pt-0">Age</th>
+                                <td class="mt-0 pt-0" id="age">20</td>
+                            </tr>
+                            <tr>
+                                <th width="30%" class="mt-0 pt-0">Location</th>
+                                <td class="mt-0 pt-0" id="location">Jakarta, Indonesia</td>
+                            </tr>
+                            <tr>
+                                <th width="30%" class="mt-0 pt-0">Years Experience</th>
+                                <td class="mt-0 pt-0" id="yoe">1</td>
+                            </tr>
+                            <tr>
+                                <th width="30%" class="mt-0 pt-0">Email</th>
+                                <td class="mt-0 pt-0" id="email">serafinasalim01@gmail.com</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mt-5">
+            <div class="card-body">
+                <form action="">
+                    <div class="col-12">
+                        <label for="name-input">Name</label>
+                        <input type="text" id="name-input" class="form-control">
+    
+                        <label class="mt-1" for="role-input">Role</label>
+                        <input type="text" id="role-input" class="form-control">
+    
+                        <label class="mt-1" for="availability-input">Availability</label>
+                        <input type="text" id="availability-input" class="form-control">
+    
+                        <label class="mt-1" for="age-input">Age</label>
+                        <input type="text" id="age-input" class="form-control">
+    
+                        <label class="mt-1" for="location-input">Location</label>
+                        <input type="text" id="location-input" class="form-control">
+    
+                        <label class="mt-1" for="yoe-input">Years Experience</label>
+                        <input type="text" id="yoe-input" class="form-control">
+    
+                        <label class="mt-1" for="email-input">Email</label>
+                        <input type="text" id="email-input" class="form-control">
+                        
+                        <button type="button" class="btn btn-success col-12 mt-3" onclick="buttonSave()">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <!-- Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        var inputName = document.getElementById("name-input")
+        var inputRole = document.getElementById("role-input")
+        var inputAvailability = document.getElementById("availability-input")
+        var inputAge = document.getElementById("age-input")
+        var inputLocation = document.getElementById("location-input")
+        var inputYoe = document.getElementById("yoe-input")
+        var inputEmail = document.getElementById("email-input")
+
+        var valueName = document.getElementById("name")
+        var valueRole = document.getElementById("role")
+        var valueAvailability = document.getElementById("availability")
+        var valueAge = document.getElementById("age")
+        var valueLocation = document.getElementById("location")
+        var valueYoe = document.getElementById("yoe")
+        var valueEmail = document.getElementById("email")
+
+        inputName.value = valueName.textContent || valueName.innerText
+        inputRole.value = valueRole.textContent || valueRole.innerText
+        inputAvailability.value = valueAvailability.textContent || valueAvailability.innerText
+        inputAge.value = valueAge.textContent || valueAge.innerText
+        inputLocation.value = valueLocation.textContent || valueLocation.innerText
+        inputYoe.value = valueYoe.textContent || valueYoe.innerText
+        inputEmail.value = valueEmail.textContent || valueEmail.innerText
+
+        function buttonSave() {
+            var inputName = document.getElementById("name-input").value
+            var inputRole = document.getElementById("role-input").value
+            var inputAvailability = document.getElementById("availability-input").value
+            var inputAge = document.getElementById("age-input").value
+            var inputLocation = document.getElementById("location-input").value
+            var inputYoe = document.getElementById("yoe-input").value
+            var inputEmail = document.getElementById("email-input").value
+
+            document.getElementById("name").textContent = inputName
+            document.getElementById("role").textContent = inputRole
+            document.getElementById("availability").textContent = inputAvailability
+            document.getElementById("age").textContent = inputAge
+            document.getElementById("location").textContent = inputLocation
+            document.getElementById("yoe").textContent = inputYoe
+            document.getElementById("email").textContent = inputEmail
+
+        }
+    </script>
+</body>
+</html>
